@@ -1,0 +1,719 @@
+/*  
+Theme Name: Front-Trends 2010
+Theme URI: http://front-trends.com/
+Description: 2 columns, left sidebar, Widget ready, valid CSS & XHTML transitionnal 
+Version: 1.0
+Author: Front-Trends 2010
+Author URI: http://front-trends.com
+Tags:two columns,fixed width,easy customization, widget ready, valid CSS, valid XHTML, sidebar left
+*/
+
+/* BASIC STRUCTURE */
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, dl, dd, dt, blockquote, address,
+th, td {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #d11;
+}
+#content a:focus,
+#navigation a:active, #navigation a:focus,
+#footer a:focus {
+	background-color: #e01111;
+	color: #fff !important;
+}
+img {
+	border: 0;
+}
+body {
+	background: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #424242;
+}
+h2, h3 {
+	font-weight: normal;
+}
+h2 {
+	font-size: 40px;
+	line-height: 1em;
+}
+h3 {
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+p,
+address {
+	margin-bottom: 15px;
+}
+address {
+	font-style: normal;
+}
+abbr[title] {
+	cursor: help;
+	border-bottom: 1px dotted #999;
+}
+#container {
+	width: 960px;
+	margin:0 auto;
+}
+.attention {
+	color: #e01111;
+}
+
+/* HEADER */
+#header {
+	height: 220px;
+	background: transparent no-repeat top right;
+}
+#header {
+	background-image: url("_img/header-home.jpg");
+}
+body.page-id-4 #header,
+body.parent-pageid-4 #header {
+	background-image: url("_img/header-speakers.jpg");
+}
+body.page-id-3 #header {
+	background-image: url("_img/header-schedule.jpg");
+}
+body.page-id-8 #header {
+	background-image: url("_img/header-venue.jpg");
+}
+body.page-id-16 #header {
+	background-image: url("_img/header-pricing.jpg");
+}
+body.page-id-18 #header {
+	background-image: url("_img/header-media.jpg");
+}
+body.page-id-13 #header {
+	background-image: url("_img/header-pricing.jpg");
+}
+body.page-id-2 #header {
+	background-image: url("_img/header-contact.jpg");
+}
+body.page-id-130 #header {
+	background-image: url("_img/header-home.jpg");
+}
+body.page-id-403 #header,
+body.page-id-430 #header {
+	background-image: url("_img/header-partners.jpg");
+}
+
+h1 {
+	width: 210px;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+#header a {
+	text-decoration: none;
+}
+#header a.feed {
+	float: right;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+#header h2 {
+	float: right;
+	padding-top: 40px;
+	font-size: 15px;
+	font-weight: bold;
+}
+#header h2 span {
+	float: right;
+	clear: right;
+	padding: 3px 10px;
+	background: rgba(255, 255, 255, .85);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FOOTER */
+#footer {
+	clear: both;
+	margin-top: 40px;
+	height: 140px;
+	background: transparent url("_img/footer-bg.png") no-repeat;
+}
+#footer h3 {
+	float: left;
+	width: 150px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 50px;
+	font-weight: bold;
+}
+#footer ul.presented {
+	float: left;
+	width: 670px;
+	padding-top: 20px;
+	list-style-type: none;
+}
+#footer li.frontend-force {
+	float:left;
+}
+#footer li.frontend-force a {
+	display: block;
+	width:390px;
+	height:100px;
+	text-indent:-9999px;
+	background: transparent url("_img/frontend-force-logo.png") no-repeat center center;
+}
+#footer li.wielgosik,
+#footer li.czerski {
+	float: left;
+	width: 270px;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 25px;
+}
+#footer li.wielgosik {
+	padding-top: 25px;
+}
+#footer a {
+	color: #666;
+	text-decoration: none;
+}
+#footer h3:nth-of-type(2) {
+	display: none;
+}
+#footer ul.social {
+	float: left;
+	width: 109px;
+	margin-top: 20px;
+	padding: 20px 0 0 30px;
+	list-style-type: none;
+	border-left: 1px solid #d8d8d8;
+}
+#footer ul.social li a {
+	display: block;
+	width: 100px;
+	line-height: 25px;
+	background: transparent no-repeat;
+	text-indent: -9999px;
+}
+#footer ul.social li.twitter a {
+	background-image: url("_img/twitter.png");
+}
+#footer ul.social li.blip a {
+	background-image: url("_img/blip.png");
+}
+#footer ul.social li.facebook a {
+	background-image: url("_img/facebook.png");
+}
+#footer .wordpress {
+	clear: both;
+	color: #999;
+	font-size: 11px;
+	padding: 15px 0 5px;
+	text-align: center;
+}
+
+
+/* NAVIGATION */
+#navigation {
+	float: left;
+	width: 230px;
+}
+#navigation ul {
+	list-style-type: none;
+	font-size: 15px;
+	padding: 44px 0;
+}
+#navigation li {
+	margin: -44px 0;
+	padding: 23px 0 21px;
+}
+#navigation ul a {
+	display: inline-block;
+	width: 210px;
+	padding-left: 20px;
+	line-height: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #444;
+}
+#navigation ul a:hover {
+	color: #e01111;
+}
+#navigation .current_page_item {
+	background: transparent url("_img/navi-active.png") no-repeat;
+}
+#navigation .current_page_item a,
+#navigation .current_page_item a:hover {
+	color: #fff;
+}
+
+/* CONTENT */
+#content {
+	margin-left: 250px;
+}
+#content h2 {
+	margin: -95px 0 0px 20px;
+}
+body.home #content h3 {
+	margin-top: 25px;
+}
+#content p.intro {
+	margin: 0 115px 40px 20px;
+}
+body.page-template-home.php #content p.intro {
+	margin-right: 0;
+}
+
+#content ul,
+#content ol {
+	margin: 0 0 15px 2.5em;
+}
+
+body.page-template-speakers-php #content ul.speakers,
+body.page-template-speakers-php #content ul.speakers-short-list {
+	list-style-type: none;
+}
+body.page-template-speakers-php #content ul.speakers-short-list {
+	background: #f6f6f6;
+	font-size: 12px;
+	margin: 0 0 20px;
+	padding: 5px 10px 5px 2.5em;
+}
+body.page-template-speakers-php #content ul.speakers-short-list li {
+	display: inline-block;
+	padding: 0 5px;
+}
+body.page-template-speakers-php ul.speakers > li {
+	margin-bottom: 15px;
+	padding-top: 10px;
+	border-bottom: 1px solid #aaa;
+	overflow: hidden;
+}
+body.page-template-speakers-php ul.speakers .speaker-details {
+	float: left;
+	border: 10px solid #e4e4e4;
+}
+body.page-template-speakers-php ul.speakers .info {
+	margin-left: 130px;
+}
+body.page-template-speakers-php ul.speakers h3 {
+	font-weight: bold;
+	color: #e01111;
+}
+body.page-template-speakers-php ul.speakers h4 {
+	font-weight: normal;
+	font-size: 25px;
+	margin-bottom: 15px;
+	clear: left;
+}
+body.page-template-speakers-php ul.speakers h4 span {
+	float: left;
+	width: 100px;
+	height: 41px;
+	margin-left: -130px;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 12px;
+	background: transparent url("_img/topic-bg.png") no-repeat;
+}
+
+body.page-template-home-php #content ul.speakers {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+body.page-template-home-php ul.speakers > li {
+	position: relative;
+	float: left;
+	width: 205px;
+	margin: 0 0 10px 10px;
+	padding: 10px 15px 20px 10px;
+	background: #e4e4e4 url("_img/home-speaker.png") no-repeat right bottom;
+}
+body.page-template-home-php ul.speakers > li:nth-child(3n+1) {
+	clear: left;
+	margin-left: 0;
+}
+body.page-template-home-php ul.speakers img {
+	float: left;
+}
+body.page-template-home-php ul.speakers h4 {
+	margin-left: 100px;
+}
+body.page-template-home-php ul.speakers a {
+	text-decoration: none;
+}
+body.page-template-home-php ul.speakers a.technology,
+body.page-template-home-php ul.speakers a.url {
+	display: block;
+	margin-left: 100px;
+	font-size: 12px;
+	color: #424242;
+}
+body.page-template-home-php ul.speakers a.url {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	padding: 0 5px;
+	background: rgba(207, 207, 207, .7);
+}
+
+
+/* SCHEDULE */
+body.page-template-schedule-php h3 {
+	line-height: 40px;
+}
+body.page-template-schedule-php h3 strong {
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 35px;
+	padding-right: 15px;
+	background: transparent url("_img/day.png") no-repeat;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+body.page-template-schedule-php h3 sup {
+	position: absolute;
+	top: 6px;
+	right: 1px;
+	font-size: 8px;
+	line-height: 8px;
+	text-transform: uppercase;
+}
+
+table.schedule {
+	width: 100%;
+	margin: 30px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.schedule th {
+	font-weight: normal;
+}
+table.schedule thead th {
+	border-bottom: 1px solid #d9d9d9;
+}
+table.schedule thead span {
+	display: block;
+	width: 180px;
+	background: #343333;
+	color: #fff;
+	line-height: 30px;
+}
+table.schedule tbody th,
+table.schedule tbody td {
+	border-bottom: 1px solid #d9d9d9;
+	height: 3em;
+	vertical-align: middle;
+}
+table.schedule tbody td {
+	width: 250px;
+	padding: 0 20px;
+}
+table.schedule tbody tr.party div a {
+	color: #fff;
+	text-decoration: underline;
+}
+table.schedule tbody tr:not(.break) {
+	background: #f3f2f2;
+}
+table.schedule tbody th {
+	width: 120px;
+}
+table.schedule h4 {
+	margin-top: 3px;
+	line-height: 15px;
+}
+table.schedule h4 a {
+	color: #424242;
+	text-decoration: none;
+	background: transparent url("_img/schedule-details-expand.png") no-repeat right center;
+	padding-right: 20px
+}
+table.schedule h4 a:hover {
+	color: #e01111;
+}
+table.schedule td.expanded h4 a {
+	color: #fff;
+	background-image: url("_img/schedule-details-collapse.png");
+}
+table.schedule h5 {
+	font-size: 13px;
+	font-weight: normal;
+}
+table.schedule tr.expanded th,
+table.schedule tr.expanded td {
+	border-bottom: 0;
+}
+table.schedule tr.expanded td.expanded {
+	background: #e01111;
+	border-bottom-color: #e01111;
+	color: #fff;
+}
+table.schedule tr.expand td {
+	padding: 0 0 0 140px;
+	background: #e01111 no-repeat 20px 0;
+	color: #fff;
+	font-size: 13px;
+	border-bottom: 1px solid #fff;
+	vertical-align: top;
+	height: auto;
+}
+table.schedule tr.expand div {
+	position: relative;
+	height: 75px;
+	padding: 0 20px 0 0;
+	margin-top: 15px;
+}
+table.schedule tr.expand div:after {
+	position: absolute;
+	left: 570px;
+	top: -15px;
+	display: block;
+	width: 10px;
+	height: 110px;
+	background: transparent url("_img/schedule-ribbon.png") no-repeat;
+	content: ".";
+	color: #e01111;
+} 
+table.schedule tr.expand p {
+	margin: 0;
+}
+
+/* SOCIABLE */
+#content div.sociable {
+	margin: 25px 0;
+	padding: 5px 20px;
+	background: #eee;
+	font-size: 13px;
+}
+#content div.sociable div {
+	display: inline;
+}
+#content div.sociable ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#content div.sociable li {
+	display: inline;
+}
+#content div.sociable a {
+	padding: 0 5px;
+	opacity: .5;
+}
+#content div.sociable a:hover {
+	opacity: 1;
+}
+#content div.sociable img {
+	vertical-align: text-bottom;
+}
+
+/* VENUE, CONTACT */
+#content ul.points,
+#content ul.points {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#content ul.points ul {
+	margin: 0;
+	padding-left: 1em;
+	list-style-type: disc;
+}
+ul.points > li {
+	padding: 15px 0 15px 60px;
+	background: transparent url("_img/point.png") no-repeat;
+}
+ul.points li h4 {
+	margin: -14px 0 -10px -60px;
+	padding-left: 60px;
+	line-height: 40px;
+	background: transparent no-repeat;
+	color: #e01111;
+}
+ul.points li.subway h4 {
+	background-image: url("_img/points-subway.png");
+}
+ul.points li.bus h4 {
+	background-image: url("_img/points-bus.png");
+}
+ul.points li.train h4 {
+	background-image: url("_img/points-train.png");
+}
+ul.points li.car h4 {
+	background-image: url("_img/points-car.png");
+}
+ul.points li.email h4 {
+	background-image: url("_img/points-email.png");
+}
+ul.points li.phone h4 {
+	background-image: url("_img/points-phone.png");
+}
+ul.points li.address h4 {
+	background-image: url("_img/points-address.png");
+}
+ul.points li.platinum h4 {
+	background-image: url("_img/points-platinum.png");
+}
+ul.points li.gold h4 {
+	background-image: url("_img/points-gold.png");
+}
+ul.points li.silver h4 {
+	background-image: url("_img/points-silver.png");
+}
+ul.hotels li {
+	padding: 0 0 10px;
+	background: transparent;
+}
+div.transportation,
+div.accomodation {
+	float: left;
+	width: 340px;
+}
+div.accomodation {
+	margin-left: 30px;
+}
+
+/* ribbons animation in speakers screen */
+.speaker-details {
+	position: relative;
+}
+.speaker-details img {
+	position: relative; 
+}
+#content ul.links {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul.links li {
+	background: url("http://ferrante.pl/fronttczers2/wp-content/uploads/2010/08/speaker-link.png") no-repeat scroll left bottom transparent;
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+	top: 90px;
+}
+ul.links li.twitter {
+	left: 30px;
+
+}
+ul.links li.url {
+	left: 0;
+}
+ul.links li.twitter a {
+	background: transparent url("http://ferrante.pl/fronttczers2/wp-content/uploads/2010/08/speaker-twitter.png") no-repeat center bottom;
+}
+ul.links li.url a {
+	background: transparent url("http://ferrante.pl/fronttczers2/wp-content/uploads/2010/08/speaker-url.png") no-repeat center bottom;
+}
+ul.links a {
+	display: block;
+	width: 26px;
+	height: 22px;
+ 	opacity: .8;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+ul.links li.twitter a {
+	-webkit-transition: all .5s ease-in-out .1s;
+	-moz-transition: all .5s ease-in-out .1s;
+	-o-transition: all .5s ease-in-out .1s;
+	transition: all .5s ease-in-out .1s;
+}
+body.page-template-speakers-php ul.speakers > li:hover ul.links li a {
+	height: 52px;
+	opacity: 1;
+}
+
+
+/* */
+#content ul.partners {
+	margin: 0;
+	padding: 15px 25px 0;
+	list-style-type: none;
+	background: #eee;
+}
+ul.partners li {
+	display: inline-block;
+	margin: 0 0 25px 25px;
+}
+ul.partners li:nth-child(3n+1) {
+	margin-left: 0;
+}
+
+/* PROMO BOX */
+#bargain {
+	display: block;
+	width: 230px;
+	height: 190px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: transparent url("_img/promo.png") no-repeat;
+}
+#bargain a:focus,
+#bargain a:active {
+	background-color: transparent;
+	color: #d11;
+}
+
+/* SPONSORS BOX */
+
+#sponsors {
+	margin: 0 0 25px;
+	text-align: center;
+}
+#sponsors h2 {
+	background: transparent url("_img/navisponsors.png") no-repeat;
+	width: 230px;
+	line-height: 77px;
+	font-size: 15px;
+	font-weight: bold;
+}
+#sponsors ul,
+#sponsors ul li,
+#sponsors ul li a {
+	margin: 0;
+	padding: 0;
+}
+
+#sponsors ul li {
+	margin: 10px 0 20px;
+}
+#sponsors ul li a:hover,
+#sponsors ul li a:active,
+#sponsors ul li a:focus {
+	background: none;
+}
+
+#sponsors ul li.devjobs a {
+	color: #000;
+	font-family: "Calibri", Helvetica, Arial;
+	font-size: 22px;
+}
+#sponsors ul li.devjobs a:hover,
+#sponsors ul li.devjobs a:focus {
+	color: #000 !important;
+}
+
+img.text-illustration {
+	float: left;
+	margin-right: 20px;
+}
+
+#abstract-553 a {
+	color: #fff;
+	text-decoration: underline;
+}
